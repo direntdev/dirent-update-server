@@ -8,7 +8,7 @@ const env = {
 
 const octokit = new Octokit({ auth: env.GITHUB_TOKEN });
 
-const streamAsset = async (assetId, res) => {
+const getDownloadUrl = async (assetId, response) => {
   const result = await octokit.request(
     "GET /repos/direntdev/dirent-app/releases/assets/{asset_id}",
     {
@@ -21,20 +21,16 @@ const streamAsset = async (assetId, res) => {
       },
     }
   );
-  const downloadUrl = result.url;
-
-  https
-    .get(downloadUrl, (response) => {
-      response.pipe(res);
-    })
-    .on("error", (err) => {
-      console.error("Error downloading file:", err);
-    });
+  return result.url;
 };
 
-export default function handler(
+export default async function handler(
   request: VercelRequest,
   response: VercelResponse
 ) {
-  streamAsset(92447553, response);
+  const url = await getDownloadUrl(92447553, response);
+
+  response.status(200).json({
+    body: url,
+  });
 }
