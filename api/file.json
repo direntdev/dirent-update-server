@@ -1,0 +1,58 @@
+{
+  "body": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('mateusz.migas%40gmail.com')/todo/lists('AQMkADAwATMwMAItYjQwYy05MjgzLTAwAi0wMAoALgAAA9KHX9nN4ltEnDcDaFvSC8YBAG35YvMLKT5Jh2qsZkcvyVAAAAIBEgAAAA%3D%3D')/tasks",
+    "value": [
+      {
+        "@odata.etag": "W/\"bfli8wspPkmHaqxmRy/JUAAGANNgzg==\"",
+        "importance": "normal",
+        "isReminderOn": false,
+        "status": "completed",
+        "title": "Kupić allegro i ali",
+        "createdDateTime": "2023-03-06T15:23:52.369957Z",
+        "lastModifiedDateTime": "2023-03-06T16:53:08.7124427Z",
+        "hasAttachments": false,
+        "categories": [],
+        "id": "AQMkADAwATMwMAItYjQwYy05MjgzLTAwAi0wMAoARgAAA9KHX9nN4ltEnDcDaFvSC8YHAG35YvMLKT5Jh2qsZkcvyVAAAAIBEgAAAG35YvMLKT5Jh2qsZkcvyVAABgAVd_sAAAA=",
+        "body": { "content": "", "contentType": "text" },
+        "completedDateTime": {
+          "dateTime": "2023-03-06T00:00:00.0000000",
+          "timeZone": "UTC"
+        }
+      },
+      {
+        "@odata.etag": "W/\"bfli8wspPkmHaqxmRy/JUAAGANNFdg==\"",
+        "importance": "normal",
+        "isReminderOn": false,
+        "status": "completed",
+        "title": "ZUSy",
+        "createdDateTime": "2023-03-05T22:08:38.1047407Z",
+        "lastModifiedDateTime": "2023-03-06T07:37:56.5532682Z",
+        "hasAttachments": false,
+        "categories": [],
+        "id": "AQMkADAwATMwMAItYjQwYy05MjgzLTAwAi0wMAoARgAAA9KHX9nN4ltEnDcDaFvSC8YHAG35YvMLKT5Jh2qsZkcvyVAAAAIBEgAAAG35YvMLKT5Jh2qsZkcvyVAABf946wIAAAA=",
+        "body": { "content": "", "contentType": "text" },
+        "completedDateTime": {
+          "dateTime": "2023-03-06T00:00:00.0000000",
+          "timeZone": "UTC"
+        }
+      },
+      {
+        "@odata.etag": "W/\"bfli8wspPkmHaqxmRy/JUAAGADbSSQ==\"",
+        "importance": "normal",
+        "isReminderOn": false,
+        "status": "completed",
+        "title": "Faktury",
+        "createdDateTime": "2023-03-04T17:58:27.4208795Z",
+        "lastModifiedDateTime": "2023-03-05T22:17:53.8575067Z",
+        "hasAttachments": false,
+        "categories": [],
+        "id": "AQMkADAwATMwMAItYjQwYy05MjgzLTAwAi0wMAoARgAAA9KHX9nN4ltEnDcDaFvSC8YHAG35YvMLKT5Jh2qsZkcvyVAAAAIBEgAAAG35YvMLKT5Jh2qsZkcvyVAABf7bm5oAAAA=",
+        "body": { "content": "", "contentType": "text" },
+        "completedDateTime": {
+          "dateTime": "2023-03-05T00:00:00.0000000",
+          "timeZone": "UTC"
+        }
+      }
+    ]
+  }
+}
