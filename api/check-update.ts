@@ -97,14 +97,6 @@ export default async function handler(
 ) {
   const apiKey = request.headers["x-api-key"];
 
-  //
-  console.log("test");
-  response.status(200).json({
-    api: env.API_KEY,
-  });
-  return;
-  //
-
   if (apiKey !== env.API_KEY) {
     response.status(401).end();
     return;
