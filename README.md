@@ -1,1 +1,1 @@
-# dirent-update-server
+# Update server for https://dirent.dev/
