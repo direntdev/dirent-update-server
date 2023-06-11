@@ -103,6 +103,9 @@ export default async function handler(
   }
 
   const query = request.query as QueryParams;
+
+  console.log("query", query);
+
   const release = await githubApi.getLatestRelease();
 
   if (!release || release.version === query.current_version) {
