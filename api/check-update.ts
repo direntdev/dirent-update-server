@@ -103,12 +103,9 @@ export default async function handler(
   }
 
   const query = request.query as QueryParams;
-
-  console.log("query", query);
-
   const release = await githubApi.getLatestRelease();
 
-  if (!release || release.version === query.current_version) {
+  if (!release || release.version === `v${query.current_version}`) {
     response.status(204).end();
     return;
   }
@@ -129,4 +126,3 @@ export default async function handler(
     pub_date: release.publishedAt,
   });
 }
-
