@@ -81,7 +81,11 @@ const getMatchingAsset = (query: QueryParams, release: ReleaseInfo) => {
   const { arch, platform } = query;
   const { assets } = release;
 
-  const matchingPlatform = assets.filter(({ name }) =>
+  const updateAssets = assets.filter(
+    ({ name }) => name.endsWith(".zip") || name.endsWith(".nupkg")
+  );
+
+  const matchingPlatform = updateAssets.filter(({ name }) =>
     name.toLocaleLowerCase().includes(platform)
   );
   const matchingArch = matchingPlatform.find(({ name }) =>
