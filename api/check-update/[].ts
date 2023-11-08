@@ -41,4 +41,3 @@ export default async function handler(
   const downloadUrl = await githubApi.getAssetDownloadUrl(asset.id);
   response.redirect(downloadUrl);
 }
-
