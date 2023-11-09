@@ -48,7 +48,8 @@ export const githubApi = {
         }
       );
 
-      const release = result.data[0];
+      const releases = result.data.filter((release) => !release.draft);
+      const release = releases[0];
       const description = release.body;
       const publishedAt = release.published_at;
       const version = release.tag_name;
